@@ -1,6 +1,6 @@
-syntax on                                       "vim in color
 set nocompatible                                "
-set showcmd                                     "
+syntax on                                       " vim in color
+set showcmd                                     " show command in lower right corner
 set ruler                                       "
 set ignorecase                                  "
 set smartcase                                   "
@@ -13,6 +13,7 @@ set softtabstop=4                               "
 set shiftround                                  "
 set autoindent                                  "
 au FileType py set smartindent                  "
-set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅        "
 filetype plugin on                              "
 set omnifunc=syntaxcomplete#Complete            "
+nmap <leader>l :set list!<CR>
+set listchars=tab:▷▷,trail:⋅,nbsp:⋅,eol:¬       "set invisible chars
