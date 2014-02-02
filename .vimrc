@@ -1,3 +1,7 @@
+"==============================================="
+                                                "
+"settings:                                      "
+                                                "
 set nocompatible                                "
 syntax on                                       " vim in color
 set showcmd                                     " show command in lower right corner
@@ -15,5 +19,12 @@ set autoindent                                  "
 au FileType py set smartindent                  "
 filetype plugin on                              "
 set omnifunc=syntaxcomplete#Complete            "
-nmap <leader>l :set list!<CR>
 set listchars=tab:▷▷,trail:⋅,nbsp:⋅,eol:¬       "set invisible chars
+                                                "
+"==============================================="
+                                                "
+"mappings:                                      "
+                                                "
+nmap <leader>l :set list!<CR>
+nmap <leader>n :set nu!<CR>                     "
+nmap <leader>p :echo expand('%:p')<CR>          "
