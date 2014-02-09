@@ -1,0 +1,1 @@
+shell -$SHELL       #make screen load a login shell and source bash_profile

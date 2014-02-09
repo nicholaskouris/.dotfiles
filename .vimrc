@@ -3,15 +3,16 @@
 set nocompatible                                "ViM instead if Vi
 syntax on                                       "vim in color
 set showcmd                                     "show command in lower right corner
-set ruler
-set ignorecase
-set smartcase
-set hlsearch
-set showmatch
-set expandtab
-set shiftwidth=4
-set numberwidth=2
-set tabstop=4
+set ruler                                       "display row,column in bottom right
+set title                                       "show filename at top of terminal
+set ignorecase                                  "ignore case when searching
+set smartcase                                   "ignore case when searching unless capitalized
+set hlsearch                                    "highlight search results
+set showmatch                                   "highlight matching braces
+set expandtab                                   "use a series of space in place of tab
+set shiftwidth=4                                "number of spaces used in auto-indent
+set numberwidth=2                               "spacing when numbered list
+set tabstop=4                                   "number of spaces to use when replacing a tab
 set softtabstop=4
 set shiftround
 set autoindent
