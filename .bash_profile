@@ -1,9 +1,6 @@
-#===============================================#
-
 set -o vi                                       #vi commands
 set show-all-if-ambiguous on                    #
 set completion-ignore-case on                   #
-
 
 #===============================================#
 
@@ -14,6 +11,6 @@ alias ..='cd ..'                                #
 #===============================================#
 
 export PS1="\u@\H/\W$ "                         #custom prompt
-export CLICOLOR=1                               #
-export LSCOLORS=ahfxcxdxAxexgxCxDhchbh          #BSD file colors
-export PATH=/usr/local/bin:$PATH                # homebrew
+export CLICOLOR=1                               #allow color
+export LSCOLORS=ahfxcxdxAxexgxCxDhchbh          #BSD colors for file types
+export PATH=/usr/local/bin:$PATH                #include homebrew at start of $PATH
