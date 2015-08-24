@@ -69,7 +69,6 @@ set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible
 "set softtabstop=4
 "set up solarized
 " set colorcolumn=81                                  " Add color to column number 81  
-"colorscheme solarized
                                                       "
 "====================================================="
 nmap <leader>l :set list!<CR>
