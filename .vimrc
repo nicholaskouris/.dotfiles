@@ -51,9 +51,10 @@ set smartcase                                         " ignore case when searchi
 set hlsearch                                          " highlight search results
 set showmatch                                         " highlight matching braces
 set expandtab                                         " use a series of spaces in place of a tab
-set numberwidth=2                                     " spacing when numbered list is visible
+set numberwidth=3                                     " spacing when numbered list is visible
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
 set shiftround                                        " use a multiple of 'shiftwidth' when indenting
 set wildignore=*.swp,*.pyc                            " ignore these file types on autocomplete
 set autoindent
