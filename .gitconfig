@@ -1,0 +1,10 @@
+[user]
+	name = Nicholas Kouris
+	email = nicholausk@users.noreply.github.com
+	editor = gvim
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[alias]
+	mylog = log --oneline --graph --all --decorate
