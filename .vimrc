@@ -10,7 +10,8 @@ call vundle#begin()
 "
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-" 
+" ToDo; get syntastic working
+" Plugin 'scrooloose/syntastic.git' 
 Plugin 'editorconfig/editorconfig-vim'
 "
 " All of your Plugins must be added before the following line
@@ -28,7 +29,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-"================Vundle==============================="
+"===========end==Vundle==============================="
 "
 syntax on                                             " vim in color
 set t_Co=256
@@ -62,15 +63,7 @@ au FileType py set smartindent
 set omnifunc=syntaxcomplete#Complete
 set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible chars
 
-"====================================================="
-"filetype plugin on                                   " enable plugins
-"set shiftwidth=4                                     " number of spaces used in autoindent
-"set tabstop=4                                        " number of spaces to use when replacing a tab
-"set softtabstop=4
-"set up solarized
-" set colorcolumn=81                                  " Add color to column number 81  
-                                                      "
-"====================================================="
+"===============Mappings=============================="
 nmap <leader>l :set list!<CR>
 nmap <leader>n :set nu!<CR>
 nmap <leader>p :echo expand('%:p')<CR>
@@ -80,3 +73,14 @@ nmap <leader>j <C-w>J<CR>
 nmap <leader>k <C-w>K<CR>
 nmap <leader>5 :res -5<CR>
 nmap <leader>u <C-w><C-w><CR>
+"
+"===========end=Mappings=============================="
+
+"====================================================="
+"filetype plugin on                                   " enable plugins
+"set shiftwidth=4                                     " number of spaces used in autoindent
+"set tabstop=4                                        " number of spaces to use when replacing a tab
+"set softtabstop=4
+"set up solarized
+" set colorcolumn=81                                  " Add color to column number 81  
+"====================================================="
