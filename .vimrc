@@ -63,6 +63,24 @@ au FileType py set smartindent
 set omnifunc=syntaxcomplete#Complete
 set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible chars
 
+"====================================================="
+" MULTIPURPOSE TAB KEY
+" Indent if we're at the beginning of a line. Else,
+" do completion.
+" github.com/garybernhardt/dotfiles/blob/master/.vimrc
+"====================================================="
+
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <expr> <tab> InsertTabWrapper()
+inoremap <s-tab> <c-n>
+
 "===============Mappings=============================="
 nmap <leader>l :set list!<CR>
 nmap <leader>n :set nu!<CR>
