@@ -21,3 +21,6 @@ export PIP_REQUIRE_VIRTUALENV=true
 alias ll="ls -GlhA"
 alias curr="cd ~/Work/blackbird-qa/ && ls -GlhA"
 alias vim='gvim'
+alias emoji="echo $'\360\237\215\260'"
+
+#===============================================#
