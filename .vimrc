@@ -82,11 +82,11 @@ inoremap <expr> <tab> InsertTabWrapper()
 inoremap <s-tab> <c-n>
 
 "===============Mappings=============================="
-nmap <leader>l :set list!<CR>
-nmap <leader>n :set nu!<CR>
-nmap <leader>p :echo expand('%:p')<CR>
+nmap <leader>l :set list!<CR>                         " hide/show eol, trail, etc.
+nmap <leader>n :set nu!<CR>                           " hide/show line numbers
+nmap <leader>p :echo expand('%:p')<CR>                " full path to file
 nmap <leader>v :Vexplore<CR>
-nmap <leader>w :set wrap!<CR>
+nmap <leader>w :set wrap!<CR>                         " line wrap on/off
 nmap <leader>j <C-w>J<CR>
 nmap <leader>k <C-w>K<CR>
 nmap <leader>5 :res -5<CR>
