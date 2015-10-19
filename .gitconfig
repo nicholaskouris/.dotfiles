@@ -8,4 +8,4 @@
 	required = true
 [alias]
 	mylog = log --oneline --graph --all --decorate
-        mylog50 = log --graph --all --decorate --pretty=format:'%C(auto) %h %cd %s' --date=short --max-count=50
+        mylog50 = log --graph --pretty=format:'%C(auto) %h %cd %s' --date=short --max-count=50
