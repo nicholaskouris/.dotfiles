@@ -15,7 +15,7 @@ export PIP_REQUIRE_VIRTUALENV=true
 # aliases 
 alias ll="ls -GlhA"
 alias curr="cd ~/Work/blackbird-qa/ && ls -GlhA"
-alias vim='gvim'
+# alias vim='gvim'
 alias cake="echo $'\360\237\215\260'"
 
 #===============================================#
