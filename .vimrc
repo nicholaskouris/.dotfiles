@@ -10,9 +10,10 @@ call vundle#begin()
 "
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
 " ToDo; get syntastic working
 " Plugin 'scrooloose/syntastic.git' 
-Plugin 'editorconfig/editorconfig-vim'
+" Plugin 'editorconfig/editorconfig-vim'
 "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
