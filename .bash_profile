@@ -5,8 +5,8 @@ set completion-ignore-case on
 
 #===============================================#
 # ruby: .rbenv environment stuff 
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # python: prevent pip from installing dependencies outside if virtualenv
 export PIP_REQUIRE_VIRTUALENV=true
