@@ -8,10 +8,8 @@ set completion-ignore-case on
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# python: prevent pip from installing dependencies outside if virtualenv
+# python: 
 export PIP_REQUIRE_VIRTUALENV=true
-
-# python: more virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]
@@ -21,7 +19,7 @@ fi
 
 # android: set android studio sdk location
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH="$PATH:$ANDROID_HOME"
+export PATH="$PATH:$ANDROID_HOME/tools"
 
 #===============================================#
 # aliases 

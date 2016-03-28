@@ -1,8 +1,1 @@
-*
-!.bash_profile
-!.inputrc
-!.vimrc
-!README.md
-!.gitignore
-!.gitconfig
-!.screenrc
+.DS_Store
