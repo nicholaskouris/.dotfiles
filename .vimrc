@@ -34,11 +34,14 @@ filetype plugin indent on    " required
 "
 syntax on                                             " vim in color
 set t_Co=256
-colorscheme macvim
-set background=light
-highlight ColorColumn guibg=grey94
-let &colorcolumn=join(range(81,999),",")
-let macvim_skip_colorscheme=1
+
+if has("gui_running")
+  colorscheme macvim
+  set background=light
+  highlight ColorColumn guibg=grey94
+  let &colorcolumn=join(range(81,999),",")
+  let macvim_skip_colorscheme=1
+endif
 
 
 "====================================================="
