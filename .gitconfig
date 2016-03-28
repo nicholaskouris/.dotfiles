@@ -1,11 +1,12 @@
 [user]
 	name = Nicholas Kouris
 	email = nicholausk@users.noreply.github.com
-	editor = gvim
+[core]
+        editor = vim
+[alias]
+	mylog = log --oneline --graph --all --decorate
+        mylog50 = log --graph --pretty=format:'%C(auto) %h %cd %s' --date=short --max-count=50
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
-[alias]
-	mylog = log --oneline --graph --all --decorate
-        mylog50 = log --graph --pretty=format:'%C(auto) %h %cd %s' --date=short --max-count=50
