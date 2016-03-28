@@ -15,6 +15,10 @@ export PIP_REQUIRE_VIRTUALENV=true
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+# android: set android studio sdk location
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:"$ANDROID_HOME"
+
 #===============================================#
 # aliases 
 alias ll="ls -GlhA"
