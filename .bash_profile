@@ -5,15 +5,19 @@ set completion-ignore-case on
 
 #===============================================#
 # ruby: .rbenv environment stuff 
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # python: prevent pip from installing dependencies outside if virtualenv
 export PIP_REQUIRE_VIRTUALENV=true
 
 # python: more virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]
+  then
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 # android: set android studio sdk location
 export ANDROID_HOME=$HOME/Library/Android/sdk
