@@ -1,6 +1,7 @@
 "================Vundle==============================="
 set nocompatible                                      " ViM instead if Vi
 filetype off
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -17,6 +18,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
 filetype plugin indent on    " required
 
 " To ignore plugin indent changes, instead use:
@@ -31,18 +33,16 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "===========end==Vundle==============================="
-
 syntax on                                             " vim in color
-set t_Co=256
 
 if has("gui_running")
+  set t_Co=256
   colorscheme macvim
   set background=light
   highlight ColorColumn guibg=grey94
   let &colorcolumn=join(range(81,999),",")
   let macvim_skip_colorscheme=1
 endif
-
 
 "====================================================="
 
