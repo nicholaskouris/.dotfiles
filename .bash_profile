@@ -5,7 +5,7 @@ set completion-ignore-case on
 
 # I declare WORK_HOME in .bashrc
 if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
+    source ~/.bashrc
 fi
 
 # export WORK_HOME={whatever dir my project is in goes here}
@@ -25,8 +25,7 @@ eval "$(rbenv init -)"
 export PIP_REQUIRE_VIRTUALENV=true
 export WORKON_HOME=$HOME/.virtualenvs
 
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]
-  then
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
 
