@@ -24,9 +24,12 @@ export PATH="$PATH:$ANDROID_HOME/tools"
 #===============================================#
 # aliases 
 alias ll="ls -GlhA"
-alias curr="cd ~/Work/blackbird-qa/ && ls -GlhA"
 alias vim='gvim'
 alias cake="echo $'\360\237\215\260'"
+
+# current work shortcut
+export WORK_HOME="/OnShift-Mobile-TestSuite"
+alias curr="cd ~/Work$WORK_HOME"
 
 #===============================================#
 # set -o vi                                       # vi commands
