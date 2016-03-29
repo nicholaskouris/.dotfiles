@@ -32,6 +32,7 @@ filetype plugin indent on    " required
 
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
 "===========end==Vundle==============================="
 syntax on                                             " vim in color
 
@@ -45,7 +46,6 @@ if has("gui_running")
 endif
 
 "====================================================="
-
 set showcmd                                           " show command in lower right corner
 set laststatus=2                                      " last 2 rows reserved for status
 set ruler                                             " display row,column in bottom right
@@ -57,13 +57,9 @@ set hlsearch                                          " highlight search results
 set showmatch                                         " highlight matching braces
 set expandtab                                         " use a series of spaces in place of a tab
 set numberwidth=3                                     " spacing when numbered list is visible
-autocmd Filetype python setlocal ts=4 sw=4 expandtab
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
-autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
+set autoindent                                        " copy the indentation from the previous line
 set shiftround                                        " use a multiple of 'shiftwidth' when indenting
 set wildignore=*.swp,*.pyc                            " ignore these file types on autocomplete
-set autoindent
-au FileType py set smartindent
 set omnifunc=syntaxcomplete#Complete
 set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible chars
 
@@ -72,7 +68,6 @@ set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible
 " Indent if we're at the beginning of a line. Else,
 " do completion.
 " github.com/garybernhardt/dotfiles/blob/master/.vimrc
-"====================================================="
 
 function! InsertTabWrapper()
     let col = col('.') - 1
@@ -95,14 +90,13 @@ nmap <leader>j <C-w>J<CR>
 nmap <leader>k <C-w>K<CR>
 nmap <leader>5 :res -5<CR>
 nmap <leader>u <C-w><C-w><CR>
-"
-"===========end=Mappings=============================="
 
-"====================================================="
+"===========end=Mappings=============================="
 "filetype plugin on                                   " enable plugins
 "set shiftwidth=4                                     " number of spaces used in autoindent
 "set tabstop=4                                        " number of spaces to use when replacing a tab
 "set softtabstop=4
 "set up solarized
 " set colorcolumn=81                                  " Add color to column number 81  
+
 "====================================================="
