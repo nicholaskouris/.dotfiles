@@ -3,6 +3,19 @@
 set show-all-if-ambiguous on   
 set completion-ignore-case on 
 
+# I declare WORK_HOME in .bashrc
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+
+# export WORK_HOME={whatever dir my project is in goes here}
+alias curr="cd ~/Work/$WORK_HOME"
+
+# misc aliases 
+alias ll="ls -GlhA"
+alias vim="gvim"
+alias cake="echo $'\360\237\215\260'"
+
 #===============================================#
 # ruby: .rbenv environment stuff 
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -22,16 +35,8 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH="$PATH:$ANDROID_HOME/tools"
 
 #===============================================#
-# aliases 
-alias ll="ls -GlhA"
-alias vim='gvim'
-alias cake="echo $'\360\237\215\260'"
+# stuff I'm not using lately
 
-# current work shortcut
-export WORK_HOME="/OnShift-Mobile-TestSuite"
-alias curr="cd ~/Work$WORK_HOME"
-
-#===============================================#
 # set -o vi                                       # vi commands
 # export CLICOLOR=1                               # allow color
 # export LSCOLORS=ahfxcxdxAxexgxCxDhchbh          # BSD colors for file types
