@@ -11,9 +11,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
-" ToDo; get syntastic working
-" Plugin 'scrooloose/syntastic.git' 
+Plugin 'Solarized'
+Plugin 'Syntastic' 
 " Plugin 'editorconfig/editorconfig-vim'
 
 " All of your Plugins must be added before the following line
@@ -26,18 +25,36 @@ filetype plugin indent on    " required
 
 " Brief help
 " :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+"
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-
+" :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+"
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+" syntastic options
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_python_checkers = ['python', 'pep8']
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "===========end==Vundle==============================="
 syntax on                                             " vim in color
 
+" setup for macvim 
 if has("gui_running")
   set t_Co=256
+  " colorscheme solarized
   colorscheme macvim
   set background=light
   highlight ColorColumn guibg=grey94
@@ -92,11 +109,5 @@ nmap <leader>5 :res -5<CR>
 nmap <leader>u <C-w><C-w><CR>
 
 "===========end=Mappings=============================="
-"filetype plugin on                                   " enable plugins
-"set shiftwidth=4                                     " number of spaces used in autoindent
-"set tabstop=4                                        " number of spaces to use when replacing a tab
-"set softtabstop=4
-"set up solarized
-" set colorcolumn=81                                  " Add color to column number 81  
 
 "====================================================="
