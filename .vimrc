@@ -58,7 +58,7 @@ if has("gui_running")
   colorscheme macvim
   set background=light
   highlight ColorColumn guibg=grey94
-  let &colorcolumn=join(range(81,999),",")
+  let &colorcolumn=join(range(80,999),",")
   let macvim_skip_colorscheme=1
 endif
 
