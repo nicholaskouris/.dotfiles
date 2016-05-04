@@ -13,7 +13,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Solarized'
 Plugin 'Syntastic' 
-" Plugin 'editorconfig/editorconfig-vim'
+Plugin 'editorconfig-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,10 +51,8 @@ let g:syntastic_check_on_wq = 0
 "===========end==Vundle==============================="
 syntax on                                             " vim in color
 
-" setup for macvim 
 if has("gui_running")
   set t_Co=256
-  " colorscheme solarized
   colorscheme macvim
   set background=light
   highlight ColorColumn guibg=grey94
