@@ -6,7 +6,6 @@
         excludesfile = ~/.gitignore
 [alias]
 	mylog = log --oneline --graph --all --decorate
-        mylog50 = log --graph --pretty=format:'%C(auto) %h %cd %s' --date=short --max-count=50
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
