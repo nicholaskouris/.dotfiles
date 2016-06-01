@@ -65,6 +65,7 @@ set showcmd                                           " show command in lower ri
 set laststatus=2                                      " last 2 rows reserved for status
 set ruler                                             " display row,column in bottom right
 set number                                            " show line numbers
+"set relativenumber                                    " hybrid number scheme
 set incsearch                                         " show search matches as you type
 set ignorecase                                        " ignore case when searching
 set smartcase                                         " ignore case when searching unless capitalized
@@ -115,5 +116,6 @@ nmap <leader>5 :res -5<CR>
 nmap <leader>u <C-w><C-w><CR>
 
 "===========end=Mappings=============================="
+
 
 "====================================================="
