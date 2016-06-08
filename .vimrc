@@ -48,19 +48,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-"===========end==Vundle==============================="
+"===========Basic=Config=============================="
 syntax on                                             " vim in color
-
-if has("gui_running")
-  set t_Co=256
-  colorscheme macvim
-  set background=light
-  highlight ColorColumn guibg=grey94
-  let &colorcolumn=join(range(80,999),",")
-  let macvim_skip_colorscheme=1
-endif
-
-"====================================================="
 set showcmd                                           " show command in lower right corner
 set laststatus=2                                      " last 2 rows reserved for status
 set ruler                                             " display row,column in bottom right
@@ -79,7 +68,16 @@ set wildignore=*.swp,*.pyc                            " ignore these file types 
 set omnifunc=syntaxcomplete#Complete
 set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible chars
 
-"====================================================="
+if has("gui_running")
+  set t_Co=256
+  colorscheme macvim
+  set background=light
+  highlight ColorColumn guibg=grey94
+  let &colorcolumn=join(range(80,999),",")
+  let macvim_skip_colorscheme=1
+endif
+
+"==============Tab=Key================================"
 " MULTIPURPOSE TAB KEY
 " Indent if we're at the beginning of a line. Else,
 " do completion.
