@@ -13,13 +13,19 @@ alias curr="cd ~/Work/$WORK_HOME"
 
 # misc aliases 
 alias ll="ls -GlhA"
-alias vim="gvim"
+
+if hash gvim 2>/dev/null; then
+    alias vim="gvim"
+fi
+
 alias cake="echo $'\360\237\215\260'"
 
 #===============================================#
 # ruby: .rbenv environment stuff 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -f ~/.rbenv ]; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
 
 # python: 
 export PIP_REQUIRE_VIRTUALENV=true
