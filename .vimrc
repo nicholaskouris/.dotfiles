@@ -67,6 +67,7 @@ set shiftround                                        " use a multiple of 'shift
 set wildignore=*.swp,*.pyc                            " ignore these file types on autocomplete
 set omnifunc=syntaxcomplete#Complete
 set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible chars
+set statusline+=col:\ %c                              " show column number (1 index)
 
 if has("gui_running")
   set t_Co=256
