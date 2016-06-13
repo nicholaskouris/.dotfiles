@@ -27,13 +27,17 @@ if [ -f ~/.rbenv ]; then
     eval "$(rbenv init -)"
 fi
 
-# python: 
+# virtualenv
 export PIP_REQUIRE_VIRTUALENV=true
 export WORKON_HOME=$HOME/.virtualenvs
 
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
+
+#pyenv
+export PYENV_ROOT=/usr/local/var/pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # android: set android studio sdk location
 export ANDROID_HOME=$HOME/Library/Android/sdk
