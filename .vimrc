@@ -52,7 +52,7 @@ let g:syntastic_check_on_wq = 0
 syntax on                                             " vim in color
 set showcmd                                           " show command in lower right corner
 set laststatus=2                                      " last 2 rows reserved for status
-set ruler                                             " display row,column in bottom right
+"set ruler                                             " display row,column in bottom right
 set number                                            " show line numbers
 "set relativenumber                                    " hybrid number scheme
 set incsearch                                         " show search matches as you type
@@ -67,7 +67,7 @@ set shiftround                                        " use a multiple of 'shift
 set wildignore=*.swp,*.pyc                            " ignore these file types on autocomplete
 set omnifunc=syntaxcomplete#Complete
 set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible chars
-set statusline+=col:\ %c                              " show column number (1 index)
+set statusline+=%=[%l\:%c]                            " show  line and column number
 
 if has("gui_running")
   set t_Co=256
