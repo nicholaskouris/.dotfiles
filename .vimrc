@@ -78,6 +78,9 @@ if has("gui_running")
   let macvim_skip_colorscheme=1
 endif
 
+
+let g:netrw_liststyle=1                               " verbose list style for netrw
+
 "==============Tab=Key================================"
 " MULTIPURPOSE TAB KEY
 " Indent if we're at the beginning of a line. Else,
