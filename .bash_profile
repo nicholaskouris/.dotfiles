@@ -8,6 +8,11 @@ if [ -f ~/.bashrc ]; then source ~/.bashrc; fi
 # export WORK_HOME={whatever dir my project is in goes here}
 alias curr="cd ~/Work/$WORK_HOME"
 
+# bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 # misc aliases 
 alias ll="ls -GlhA"
 if hash gvim 2>/dev/null; then alias vim="gvim"; fi
