@@ -102,8 +102,6 @@ inoremap <s-tab> <c-n>
 :inoremap ( ()<Esc>i
 :inoremap [ []<Esc>i
 :inoremap { {}<Esc>i
-:inoremap ' ''<Esc>i
-:inoremap " ""<Esc>i
 :inoremap < <><Esc>i
 
 "===============Mappings=============================="

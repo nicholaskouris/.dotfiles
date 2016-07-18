@@ -1,7 +1,6 @@
 #=======General=Setup============================#
 set show-all-if-ambiguous on   
 set completion-ignore-case on 
-set -o vi
 
 # I declare WORK_HOME in .bashrc
 if [ -f ~/.bashrc ]; then source ~/.bashrc; fi
