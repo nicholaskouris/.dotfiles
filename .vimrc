@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Syntastic' 
 Plugin 'mileszs/ack.vim'
 Plugin 'editorconfig-vim'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -69,6 +70,11 @@ set omnifunc=syntaxcomplete#Complete
 set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible chars
 set statusline+=%=[%l\:%c]                            " show  line and column number
 
+" YCM and ctags stuff
+set tags=tags
+let g:ycm_collect_identifiers_from_tags_files = 1
+
+
 if has("gui_running")
   set t_Co=256
   colorscheme macvim
@@ -87,16 +93,16 @@ let g:netrw_liststyle=1                               " verbose list style for n
 " do completion.
 " github.com/garybernhardt/dotfiles/blob/master/.vimrc
 
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
-endfunction
-inoremap <expr> <tab> InsertTabWrapper()
-inoremap <s-tab> <c-n>
+" function! InsertTabWrapper()
+"     let col = col('.') - 1
+"     if !col || getline('.')[col - 1] !~ '\k'
+"         return "\<tab>"
+"     else
+"         return "\<c-p>"
+"     endif
+" endfunction
+" inoremap <expr> <tab> InsertTabWrapper()
+" inoremap <s-tab> <c-n>
 
 "===============Bracket=Setting======================="
 :inoremap ( ()<Esc>i
