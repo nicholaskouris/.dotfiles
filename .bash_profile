@@ -6,6 +6,10 @@ set histappend
 export HISTFILESIZE=10000
 export HISTSIZE=5000
 
+#=======General=Hacks============================#
+alias cc='clear'
+alias myip='curl ipinfo.io/ip'
+
 # I declare WORK_HOME in .bashrc
 if [ -f ~/.bashrc ]; then source ~/.bashrc; fi
 
@@ -14,7 +18,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion; fi
 
 # misc aliases 
-alias ll="ls -GlhA"
+alias ll="ls -GlhA --group-directories-first"
 if hash gvim 2>/dev/null; then alias vim="gvim"; fi
 alias cake="echo $'\360\237\215\260'"
 
