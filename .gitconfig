@@ -5,7 +5,7 @@
         editor = vim
         excludesfile = ~/.gitignore
 [alias]
-	mylog = log --oneline --graph --all --decorate
+	loggy = log --oneline --graph --all --decorate
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
