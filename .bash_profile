@@ -56,3 +56,15 @@ export PATH="$PATH:$ANDROID_HOME/tools"
 # export PS1="\u@\H/\W$ "                         # custom prompt
 
 #================================================#
+
+alias dc=docker-compose
+
+dc-recompile() {
+  for service in "$@"
+  do
+    docker-compose stop "$service"
+  done
+  docker container prune -f
+  docker volume prune -f
+  dc up -d
+}
