@@ -1,6 +1,6 @@
 #=======General=Setup============================#
-set show-all-if-ambiguous on   
-set completion-ignore-case on 
+set show-all-if-ambiguous on
+set completion-ignore-case on
 set histappend
 
 export HISTFILESIZE=10000
@@ -10,8 +10,8 @@ if [ -f ~/.bashrc ]; then
     source ~/.bashrc;
 fi
 
-# bash completion
-source /usr/local/git/contrib/completion/git-completion.bash
+# bash && git completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 #======aliases====================================#
 
@@ -40,7 +40,7 @@ fi
 
 # pyenv
 export PYENV_ROOT=/usr/local/var/pyenv
-if which pyenv > /dev/null; then 
+if which pyenv > /dev/null; then
     eval "$(pyenv init -)";
 fi
 
@@ -60,11 +60,11 @@ export PATH="$PATH:$ANDROID_HOME/tools"
 alias dc=docker-compose
 
 dc-recompile() {
-  for service in "$@"
-  do
-    docker-compose stop "$service"
-  done
-  docker container prune -f
-  docker volume prune -f
-  dc up -d
+    for service in "$@"
+    do
+        docker-compose stop "$service"
+    done
+    docker container prune -f
+    docker volume prune -f
+    dc up -d
 }

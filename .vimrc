@@ -1,53 +1,5 @@
-"================Vundle==============================="
 set nocompatible                                      " ViM instead if Vi
 filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-" Keep Plugin commands between vundle#begin/end.
-" Plugins go here
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'Syntastic' 
-Plugin 'mileszs/ack.vim'
-Plugin 'editorconfig-vim'
-Plugin 'Valloric/YouCompleteMe'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-
-filetype plugin indent on    " required
-
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just
-" :PluginUpdate
-"
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to
-" auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-"
-" syntastic options
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-let g:syntastic_python_checkers = ['python', 'pep8']
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 "===========Basic=Config=============================="
 syntax on                                             " vim in color
