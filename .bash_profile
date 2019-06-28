@@ -28,21 +28,22 @@ alias cake="echo $'\360\237\215\260'"
 
 #======Node.js===================================#
 
+export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 #======Python====================================#
-# virtualenv
-export PIP_REQUIRE_VIRTUALENV=true
-export WORKON_HOME=$HOME/.virtualenvs
+# # virtualenv
+# export PIP_REQUIRE_VIRTUALENV=true
+# export WORKON_HOME=$HOME/.virtualenvs
 
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    source /usr/local/bin/virtualenvwrapper.sh;
-fi
+# if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+#     source /usr/local/bin/virtualenvwrapper.sh;
+# fi
 
-# pyenv
-export PYENV_ROOT=/usr/local/var/pyenv
-if which pyenv > /dev/null; then
-    eval "$(pyenv init -)";
-fi
+# # pyenv
+# export PYENV_ROOT=/usr/local/var/pyenv
+# if which pyenv > /dev/null; then
+#     eval "$(pyenv init -)";
+# fi
 
 #======Android===================================#
 
@@ -116,3 +117,7 @@ dc-recompile() {
     docker volume prune -f
     dc up -d
 }
+
+#======git=======================================#
+
+alias gg='git loggy'

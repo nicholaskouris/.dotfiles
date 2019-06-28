@@ -5,9 +5,8 @@ filetype off
 syntax on                                             " vim in color
 set showcmd                                           " show command in lower right corner
 set laststatus=2                                      " last 2 rows reserved for status
-"set ruler                                             " display row,column in bottom right
+set ruler                                             " display row,column in bottom right
 set number                                            " show line numbers
-"set relativenumber                                    " hybrid number scheme
 set incsearch                                         " show search matches as you type
 set ignorecase                                        " ignore case when searching
 set smartcase                                         " ignore case when searching unless capitalized
