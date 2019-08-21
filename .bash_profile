@@ -7,7 +7,7 @@ export HISTFILESIZE=50000
 export HISTSIZE=15000
 
 if [ -f ~/.bashrc ]; then
-    source ~/.bashrc;
+	source ~/.bashrc
 fi
 
 # bash && git completion
@@ -20,7 +20,7 @@ alias ll='gls -GlhA --time-style=+"%Y-%m-%d %H:%M:%S"'
 
 # open files in MacVim (on macOS)
 if hash gvim 2>/dev/null; then
-    alias vim="gvim";
+	alias vim="gvim"
 fi
 
 # cake
@@ -57,10 +57,9 @@ export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 # get current branch in git repo
 function parse_git_branch() {
-	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
-	if [ ! "${BRANCH}" == "" ]
-	then
-		STAT=`parse_git_dirty`
+	BRANCH=$(git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+	if [ ! "${BRANCH}" == "" ]; then
+		STAT=$(parse_git_dirty)
 		echo "[${BRANCH}${STAT}]"
 	else
 		echo ""
@@ -68,14 +67,32 @@ function parse_git_branch() {
 }
 
 # get current status of git repo
-function parse_git_dirty {
-	status=`git status 2>&1 | tee`
-	dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
-	untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"`
-	ahead=`echo -n "${status}" 2> /dev/null | grep "Your branch is ahead of" &> /dev/null; echo "$?"`
-	newfile=`echo -n "${status}" 2> /dev/null | grep "new file:" &> /dev/null; echo "$?"`
-	renamed=`echo -n "${status}" 2> /dev/null | grep "renamed:" &> /dev/null; echo "$?"`
-	deleted=`echo -n "${status}" 2> /dev/null | grep "deleted:" &> /dev/null; echo "$?"`
+function parse_git_dirty() {
+	status=$(git status 2>&1 | tee)
+	dirty=$(
+		echo -n "${status}" 2>/dev/null | grep "modified:" &>/dev/null
+		echo "$?"
+	)
+	untracked=$(
+		echo -n "${status}" 2>/dev/null | grep "Untracked files" &>/dev/null
+		echo "$?"
+	)
+	ahead=$(
+		echo -n "${status}" 2>/dev/null | grep "Your branch is ahead of" &>/dev/null
+		echo "$?"
+	)
+	newfile=$(
+		echo -n "${status}" 2>/dev/null | grep "new file:" &>/dev/null
+		echo "$?"
+	)
+	renamed=$(
+		echo -n "${status}" 2>/dev/null | grep "renamed:" &>/dev/null
+		echo "$?"
+	)
+	deleted=$(
+		echo -n "${status}" 2>/dev/null | grep "deleted:" &>/dev/null
+		echo "$?"
+	)
 	bits=''
 	if [ "${renamed}" == "0" ]; then
 		bits=">${bits}"
@@ -109,15 +126,14 @@ export PS1="\h:\W\`parse_git_branch\` \u\\$ "
 alias dc=docker-compose
 
 dc-recompile() {
-    for service in "$@"
-    do
-        docker-compose stop "$service"
-    done
-    docker container prune -f
-    docker volume prune -f
-    dc up -d
+	for service in "$@"; do
+		docker-compose stop "$service"
+	done
+	docker container prune -f
+	docker volume prune -f
+	dc up -d
 }
 
 #======git=======================================#
 
-alias gg='git loggy'
+alias gg='git log --oneline --graph --all --decorate'
