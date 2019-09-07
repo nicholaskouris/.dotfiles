@@ -6,10 +6,6 @@ set histappend
 export HISTFILESIZE=50000
 export HISTSIZE=15000
 
-if [ -f ~/.bashrc ]; then
-	source ~/.bashrc
-fi
-
 # bash && git completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
