@@ -9,6 +9,10 @@ export HISTSIZE=15000
 # bash && git completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include":wa
+
+
 #======aliases====================================#
 
 # requires coreutils (brew install coreutils)
@@ -27,8 +31,8 @@ alias cake="echo $'\360\237\215\260'"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 #======Python====================================#
-# # virtualenv
-# export PIP_REQUIRE_VIRTUALENV=true
+# virtualenv
+ export PIP_REQUIRE_VIRTUALENV=true
 # export WORKON_HOME=$HOME/.virtualenvs
 
 # if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
