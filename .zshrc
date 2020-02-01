@@ -36,7 +36,7 @@ ZSH_THEME="maran"
 # DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -68,7 +68,7 @@ ZSH_THEME="maran"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git-prompt)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,8 +97,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gg='git log --oneline --graph --all --decorate'
 
+source ~/.zsh_profile
+
+alias gg='git log --oneline --graph --all --decorate'
 alias dc=docker-compose
 
 dc-recompile() {
@@ -111,4 +113,3 @@ dc-recompile() {
 }
 
 export PATH="/usr/local/opt/node@10/bin:$PATH"
-
