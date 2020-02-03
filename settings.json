@@ -1,0 +1,65 @@
+{
+    "workbench.colorTheme": "Solarized Light",
+    "yaml.format.enable": true,
+    "editor.rulers": [120],
+    "editorRuler.foreground": "#ff4081",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vs-minimal",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": true,
+        "editor.detectIndentation": true,
+        "editor.renderIndentGuides": true
+    },
+    "editor.formatOnType": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "cSpell.userWords": [
+        "Unfiled"
+    ],
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "python.analysis.information": [
+        "no-member"
+    ],
+    "python.linting.pylintArgs": [
+        "--disable=E1101"
+    ],
+    "workbench.startupEditor": "newUntitledFile",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 100,
+    "prettier.jsxSingleQuote": true,
+    "prettier.trailingComma": "es5",
+    "eslint.alwaysShowStatus": true,
+    "eslint.autoFixOnSave": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.statusBar.enabled": false,
+    "terminal.explorerKind": "external",
+    "workbench.panel.defaultLocation": "right",
+    "javascript.suggest.autoImports": false
+}
