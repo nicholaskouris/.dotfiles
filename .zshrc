@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh_profile
 
+alias cc='clear'
 alias gg='git log --oneline --graph --all --decorate'
 alias dc=docker-compose
 
