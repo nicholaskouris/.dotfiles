@@ -3,8 +3,6 @@ set show-all-if-ambiguous on
 set completion-ignore-case on
 set histappend
 
-shopt -s histverify
-
 export HISTFILESIZE=50000
 export HISTSIZE=15000
 
@@ -12,7 +10,8 @@ export HISTSIZE=15000
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include":wa
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
 
 #======aliases====================================#
 
@@ -31,15 +30,10 @@ alias cake="echo $'\360\237\215\260'"
 
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
 #======Python====================================#
 # virtualenv
 
 export PIP_REQUIRE_VIRTUALENV=true
-
 # export WORKON_HOME=$HOME/.virtualenvs
 
 # if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
