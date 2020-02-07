@@ -1,8 +1,8 @@
 {
     "workbench.colorTheme": "Solarized Light",
-    "yaml.format.enable": true,
-    "editor.rulers": [120],
-    "editorRuler.foreground": "#ff4081",
+    "editor.rulers": [
+        120
+    ],
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -10,25 +10,18 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "window.zoomLevel": 0,
     "workbench.iconTheme": "vs-minimal",
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "[yaml]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
-        "editor.autoIndent": true,
         "editor.detectIndentation": true,
         "editor.renderIndentGuides": true
     },
     "editor.formatOnType": true,
     "javascript.updateImportsOnFileMove.enabled": "never",
-    "cSpell.userWords": [
-        "Unfiled"
-    ],
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -44,12 +37,7 @@
     },
     "workbench.settings.editor": "json",
     "workbench.settings.useSplitJSON": true,
-    "prettier.singleQuote": true,
-    "prettier.printWidth": 100,
-    "prettier.jsxSingleQuote": true,
-    "prettier.trailingComma": "es5",
     "eslint.alwaysShowStatus": true,
-    "eslint.autoFixOnSave": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
@@ -61,5 +49,7 @@
     "gitlens.statusBar.enabled": false,
     "terminal.explorerKind": "external",
     "workbench.panel.defaultLocation": "right",
-    "javascript.suggest.autoImports": false
+    "javascript.suggest.autoImports": false,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 8
 }
