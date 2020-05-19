@@ -113,4 +113,7 @@ dc-recompile() {
 	dc up -d
 }
 
+# prefer python 3.8
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
 export PATH="/usr/local/opt/node@10/bin:$PATH"
