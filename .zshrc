@@ -100,6 +100,9 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh_profile
 
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export PATH="/usr/local/opt/node@10/bin:$PATH"
+
 alias cc='clear'
 alias gg='git log --oneline --graph --all --decorate'
 alias dc=docker-compose
@@ -112,8 +115,3 @@ dc-recompile() {
 	docker volume prune -f
 	dc up -d
 }
-
-# prefer python 3.8
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-
-export PATH="/usr/local/opt/node@10/bin:$PATH"
