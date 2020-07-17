@@ -1,10 +1,19 @@
 {
-    "workbench.colorTheme": "Solarized Light",
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "editor.formatOnType": true,
     "editor.rulers": [
         120
     ],
+    "editor.minimap.enabled": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.statusBar.enabled": false,
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "vscode.typescript-language-features",
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -12,18 +21,8 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "window.zoomLevel": 0,
-    "workbench.iconTheme": "vs-minimal",
-    "[yaml]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.detectIndentation": true,
-        "editor.renderIndentGuides": true
-    },
-    "editor.formatOnType": true,
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
     },
     "python.analysis.information": [
         "no-member"
@@ -31,27 +30,24 @@
     "python.linting.pylintArgs": [
         "--disable=E1101"
     ],
-    "workbench.startupEditor": "newUntitledFile",
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
     },
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.detectIndentation": true,
+        "editor.renderIndentGuides": true
+    },
+    "terminal.explorerKind": "external",
+    "window.zoomLevel": 0,
     "workbench.settings.editor": "json",
     "workbench.settings.useSplitJSON": true,
-    "eslint.alwaysShowStatus": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "editor.minimap.enabled": false,
     "workbench.activityBar.visible": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.statusBar.enabled": false,
-    "terminal.explorerKind": "external",
-    "workbench.panel.defaultLocation": "right",
-    "javascript.suggest.autoImports": false,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 8,
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false
+    "workbench.panel.defaultLocation": "right",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Solarized Light",
 }
