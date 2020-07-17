@@ -1,10 +1,13 @@
 {
-    "workbench.colorTheme": "Solarized Light",
-    "editor.rulers": [
-        120
-    ],
+    "[gitlens]": {
+        "currentLine.enabled": false,
+        "hovers.currentLine.over": "line",
+        "statusBar.enabled": false,
+    },
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "suggest.autoImports": false,
+        "updateImportsOnFileMove.enabled": "never",
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -12,46 +15,44 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "window.zoomLevel": 0,
-    "workbench.iconTheme": "vs-minimal",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "analysis.information": [
+            "no-member"
+        ],
+        "linting.pylintArgs": [
+            "--disable=E1101"
+        ],
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "updateImportsOnFileMove.enabled": "always",
+    },
     "[yaml]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
         "editor.detectIndentation": true,
         "editor.renderIndentGuides": true
     },
-    "editor.formatOnType": true,
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "python.analysis.information": [
-        "no-member"
-    ],
-    "python.linting.pylintArgs": [
-        "--disable=E1101"
-    ],
-    "workbench.startupEditor": "newUntitledFile",
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
     "workbench.settings.editor": "json",
     "workbench.settings.useSplitJSON": true,
-    "eslint.alwaysShowStatus": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.activityBar.visible": false,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 8,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Solarized Light",
+    "editor.minimap.enabled": false,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "editor.minimap.enabled": false,
-    "workbench.activityBar.visible": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.statusBar.enabled": false,
-    "terminal.explorerKind": "external",
-    "workbench.panel.defaultLocation": "right",
-    "javascript.suggest.autoImports": false,
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 8,
     "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false
+    "editor.renderControlCharacters": false,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+        120
+    ],
+    "terminal.explorerKind": "external",
+    "window.zoomLevel": 0,
 }
