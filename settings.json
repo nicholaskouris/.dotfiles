@@ -1,7 +1,8 @@
 {
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
-    "editor.formatOnType": true,
+    "editor.formatOnType": false,
+    "editor.formatOnPaste": true,
     "editor.rulers": [
         120
     ],
@@ -50,4 +51,7 @@
     "workbench.iconTheme": "vs-minimal",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Solarized Light",
+    "files.associations": {
+        "*.json": "jsonc"
+    },
 }
