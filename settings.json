@@ -1,13 +1,19 @@
 {
-    "[gitlens]": {
-        "currentLine.enabled": false,
-        "hovers.currentLine.over": "line",
-        "statusBar.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+        120
+    ],
+    "editor.minimap.enabled": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
     },
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.statusBar.enabled": false,
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
-        "suggest.autoImports": false,
-        "updateImportsOnFileMove.enabled": "never",
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -17,16 +23,15 @@
     },
     "[python]": {
         "editor.defaultFormatter": "ms-python.python",
-        "analysis.information": [
-            "no-member"
-        ],
-        "linting.pylintArgs": [
-            "--disable=E1101"
-        ],
     },
+    "python.analysis.information": [
+        "no-member"
+    ],
+    "python.linting.pylintArgs": [
+        "--disable=E1101"
+    ],
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
-        "updateImportsOnFileMove.enabled": "always",
     },
     "[yaml]": {
         "editor.insertSpaces": true,
@@ -34,6 +39,8 @@
         "editor.detectIndentation": true,
         "editor.renderIndentGuides": true
     },
+    "terminal.explorerKind": "external",
+    "window.zoomLevel": 0,
     "workbench.settings.editor": "json",
     "workbench.settings.useSplitJSON": true,
     "workbench.activityBar.visible": false,
@@ -43,16 +50,4 @@
     "workbench.iconTheme": "vs-minimal",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Solarized Light",
-    "editor.minimap.enabled": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false,
-    "editor.formatOnType": true,
-    "editor.rulers": [
-        120
-    ],
-    "terminal.explorerKind": "external",
-    "window.zoomLevel": 0,
 }
