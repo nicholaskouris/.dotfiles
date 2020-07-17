@@ -98,10 +98,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.zsh_profile
+source ~/.zprofile
 
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
+
+# homebrew
+export PATH="/usr/local/sbin:$PATH"
 
 alias cc='clear'
 alias gg='git log --oneline --graph --all --decorate'

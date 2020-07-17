@@ -1,9 +1,0 @@
-vscode
-```
-Ctrl+`
-Ctrl+B
-Ctrl+Shift+E
-Ctrl+Shift+F
-Ctrl+P
-Ctrl+Shift+P
-```
