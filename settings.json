@@ -7,8 +7,8 @@
         120
     ],
     "editor.minimap.enabled": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+    "files.associations": {
+        "*.json": "jsonc"
     },
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
@@ -41,6 +41,7 @@
         "editor.renderIndentGuides": true
     },
     "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "Terminal.app",
     "window.zoomLevel": 0,
     "workbench.settings.editor": "json",
     "workbench.settings.useSplitJSON": true,
@@ -51,7 +52,4 @@
     "workbench.iconTheme": "vs-minimal",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Solarized Light",
-    "files.associations": {
-        "*.json": "jsonc"
-    },
 }
