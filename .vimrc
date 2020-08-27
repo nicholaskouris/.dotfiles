@@ -1,8 +1,9 @@
-set nocompatible                                      " ViM instead if Vi
-filetype off
 
 "===========Basic=Config=============================="
+filetype off
 syntax on                                             " vim in color
+
+set nocompatible                                      " ViM instead if Vi
 set showcmd                                           " show command in lower right corner
 set laststatus=2                                      " last 2 rows reserved for status
 set ruler                                             " display row,column in bottom right

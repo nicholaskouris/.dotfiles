@@ -1,5 +1,5 @@
 {
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
     "editor.formatOnType": false,
     "editor.formatOnPaste": true,
@@ -7,6 +7,7 @@
         120
     ],
     "editor.minimap.enabled": false,
+    "editor.insertSpaces": true,
     "files.associations": {
         "*.json": "jsonc"
     },
@@ -33,7 +34,10 @@
     ],
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
     },
+    "typescript.updateImportsOnFileMove.enabled": "always",
     "[yaml]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
@@ -49,7 +53,10 @@
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 8,
     "workbench.panel.defaultLocation": "right",
-    "workbench.iconTheme": "vs-minimal",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Solarized Light",
+    "breadcrumbs.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "vs-minimal",
+    "search.location": "panel",
 }

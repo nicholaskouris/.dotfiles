@@ -108,7 +108,7 @@ export PATH="/usr/local/sbin:$PATH"
 
 alias cc='clear'
 alias gg='git log --oneline --graph --all --decorate'
-alias dc=docker-compose
+alias dc='docker-compose'
 
 dc-recompile() {
 	for service in "$@"; do

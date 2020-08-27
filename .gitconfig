@@ -1,11 +1,16 @@
 [user]
-name = nicholausk
-email = nicholausk@users.noreply.github.com
+    email = nicholausk@users.noreply.github.com
+    name = nicholausk
+
 [core]
-editor = vim
-excludesfile = ~/.gitignore
-pager = less -F
+    editor = vim
+    excludesfile = ~/.gitignore
+    pager = less -F
+
+[diff]
+    colorMoved = default
+
 [filter "lfs"]
-clean = git-lfs clean %f
-smudge = git-lfs smudge %f
-required = true
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
