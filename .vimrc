@@ -1,4 +1,3 @@
-
 "===========Basic=Config=============================="
 filetype off
 syntax on                                             " vim in color
@@ -26,18 +25,16 @@ set statusline+=%=[%l\:%c]                            " show  line and column nu
 set tags=tags
 let g:ycm_collect_identifiers_from_tags_files = 1
 
+let g:netrw_liststyle=1                               " verbose list style for netrw
 
+"==============Solarized=============================="
 if has("gui_running")
   set t_Co=256
-  colorscheme macvim
+  colorscheme solarized
   set background=light
-  highlight ColorColumn guibg=grey94
-  let &colorcolumn=join(range(80,999),",")
-  let macvim_skip_colorscheme=1
+  highlight ColorColumn guibg=#eee8d5
+  let &colorcolumn=join(range(120,999),",")
 endif
-
-
-let g:netrw_liststyle=1                               " verbose list style for netrw
 
 "==============Tab=Key================================"
 " MULTIPURPOSE TAB KEY
@@ -48,9 +45,9 @@ let g:netrw_liststyle=1                               " verbose list style for n
 " function! InsertTabWrapper()
 "     let col = col('.') - 1
 "     if !col || getline('.')[col - 1] !~ '\k'
-"         return "\<tab>"
+"         return \"\<tab>"
 "     else
-"         return "\<c-p>"
+"         return \"\<c-p>"
 "     endif
 " endfunction
 " inoremap <expr> <tab> InsertTabWrapper()
@@ -73,7 +70,5 @@ nmap <leader>k <C-w>K<CR>
 nmap <leader>5 :res -5<CR>
 nmap <leader>u <C-w><C-w><CR>
 
-"===========end=Mappings=============================="
-
-
 "====================================================="
+

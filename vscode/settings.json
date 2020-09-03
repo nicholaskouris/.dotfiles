@@ -58,5 +58,4 @@
     "breadcrumbs.enabled": true,
     "explorer.confirmDragAndDrop": false,
     "workbench.iconTheme": "vs-minimal",
-    "search.location": "panel",
 }
