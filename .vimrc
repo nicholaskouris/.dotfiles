@@ -19,7 +19,7 @@ set shiftround                                        " use a multiple of 'shift
 set wildignore=*.swp,*.pyc                            " ignore these file types on autocomplete
 set omnifunc=syntaxcomplete#Complete
 set listchars=tab:▷▷,trail:⋅,extends:…,nbsp:⋅,eol:¬   " set invisible chars
-set statusline+=%=[%l\:%c]                            " show  line and column number
+"set statusline+=%=[%l\:%c]                            " show  line and column number
 
 " YCM and ctags stuff
 set tags=tags

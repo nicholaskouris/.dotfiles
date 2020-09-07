@@ -1,6 +1,12 @@
 {
+    "breadcrumbs.enabled": true,
+    "cSpell.userWords": [
+        "complion"
+    ],
+    "explorer.confirmDragAndDrop": false,
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
+    "editor.renderLineHighlight": "none",
     "editor.formatOnType": false,
     "editor.formatOnPaste": true,
     "editor.rulers": [
@@ -29,6 +35,8 @@
     "python.analysis.information": [
         "no-member"
     ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
         "--disable=E1101"
     ],
@@ -55,7 +63,6 @@
     "workbench.panel.defaultLocation": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Solarized Light",
-    "breadcrumbs.enabled": true,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.iconTheme": "vs-minimal",
+    "workbench.tree.indent": 20,
+    "workbench.iconTheme": "vs-minimal"
 }
