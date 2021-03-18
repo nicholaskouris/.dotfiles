@@ -100,13 +100,8 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zprofile
 
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-export PATH="/usr/local/opt/node@10/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/opt/node@10/bin:/usr/local/opt/python@3.8/bin:$PATH"
 
-# homebrew
-export PATH="/usr/local/sbin:$PATH"
-
-alias cc='clear'
 alias gg='git log --oneline --graph --all --decorate'
 alias dc='docker-compose'
 
