@@ -105,7 +105,6 @@ export PATH="/usr/local/sbin:/usr/local/opt/node@10/bin:/usr/local/opt/python@3.
 alias gg='git log --oneline --graph --all --decorate'
 alias dc='docker-compose'
 alias ip='curl ipinfo.io'
-alias markdowns='code ~/Documents/markdowns/*'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 
 dc-recompile() {
