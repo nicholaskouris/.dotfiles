@@ -1,8 +1,11 @@
 {
     "breadcrumbs.enabled": true,
     "cSpell.userWords": [
-        "complion"
+        "Immer",
+        "complion",
+        "unfiled"
     ],
+    "cSpell.showStatus": false,
     "explorer.confirmDragAndDrop": false,
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
@@ -17,20 +20,24 @@
     "files.associations": {
         "*.json": "jsonc"
     },
-    "gitlens.currentLine.enabled": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true
+    },
+    "files.insertFinalNewline": true,
+    "git.enableStatusBarSync": false,
+    "gitlens.currentLine.enabled": true,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.statusBar.enabled": false,
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
     },
+    "javascript.suggest.autoImports": false,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python",
     },
     "python.analysis.information": [
         "no-member"
@@ -52,9 +59,11 @@
         "editor.detectIndentation": true,
         "editor.renderIndentGuides": true
     },
+    "search.exclude": {
+        "**/node_modules": true,
+    },
     "terminal.explorerKind": "external",
     "terminal.external.osxExec": "Terminal.app",
-    "window.zoomLevel": 0,
     "workbench.settings.editor": "json",
     "workbench.settings.useSplitJSON": true,
     "workbench.activityBar.visible": false,
@@ -64,5 +73,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Solarized Light",
     "workbench.tree.indent": 20,
-    "workbench.iconTheme": "vs-minimal"
+    "workbench.iconTheme": "vs-minimal",
+    "window.zoomLevel": 1,
 }
