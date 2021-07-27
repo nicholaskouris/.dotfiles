@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/nick.kouris/.oh-my-zsh"
+export ZSH="/Users/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -98,14 +98,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.zprofile
+if [ -f ~/.zprofile ]; then
+  source ~/.zprofile
+fi
 
-export PATH="/usr/local/sbin:/usr/local/opt/node@10/bin:/usr/local/opt/python@3.8/bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+# export PATH="/usr/local/opt/node@10/bin:/usr/local/opt/python@3.8/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias gg='git log --oneline --graph --all --decorate'
 alias dc='docker-compose'
 alias ip='curl ipinfo.io'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
+alias path="echo $PATH | tr ':' '\n'";
 
 dc-recompile() {
   if [ -z "$1" ]; then
