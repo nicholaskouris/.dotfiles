@@ -1,9 +1,11 @@
+# https://EditorConfig.org
+
 [*]
 end_of_line = lf
 insert_final_newline = true
 charset = utf-8
 trim_trailing_whitespace = true
 
-[*.js]
+[*.{js,json,css,html}]
 indent_style = space
 indent_size = 2
