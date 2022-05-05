@@ -102,10 +102,20 @@ if [ -f ~/.zprofile ]; then
   source ~/.zprofile
 fi
 
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-# export PATH="/usr/local/opt/node@10/bin:/usr/local/opt/python@3.8/bin:$PATH"
+if ! [[  ":$PATH:" == *":/usr/local/opt/node@10/bin:"* ]]; then
+  export PATH="/usr/local/opt/node@10/bin:$PATH"
+fi
+
+if ! [[  ":$PATH:" == *":/usr/local/opt/python@3.8/bin:"* ]]; then
+  export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+fi
+
+if ! [[  ":$PATH:" == *":/usr/local/opt/openjdk@11/bin:"* ]]; then
+  export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+fi
 
 export NVM_DIR="$HOME/.nvm"
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
@@ -114,6 +124,18 @@ alias dc='docker-compose'
 alias ip='curl ipinfo.io'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias path="echo $PATH | tr ':' '\n'";
+
+alias docker_restart='killall Docker && open /Applications/Docker.app'
+
+az-token() {
+  if ! command -v jq &> /dev/null
+  then
+    echo "jq not installed"
+  else
+    az account get-access-token --resource-type oss-rdbms | jq -r '.accessToken' | pbcopy \
+    && echo "access token copied to clipboard"
+  fi
+}
 
 dc-recompile() {
   if [ -z "$1" ]; then
@@ -128,6 +150,7 @@ dc-recompile() {
     dc up -d
   fi
 }
+
 
 k() {
   kubectl config current-context
