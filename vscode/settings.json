@@ -2,10 +2,10 @@
 {
     "breadcrumbs.enabled": true,
     "cSpell.userWords": [
-        "Immer",
         "complion",
         "unfiled",
-        "acro"
+        "acro",
+        "immer"
     ],
     "cSpell.showStatus": false,
     "editor.renderWhitespace": "all",

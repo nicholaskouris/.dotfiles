@@ -110,6 +110,10 @@ if ! [[  ":$PATH:" == *":/usr/local/opt/python@3.8/bin:"* ]]; then
   export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 fi
 
+if ! [[  ":$PATH:" == *":/usr/local/opt/python@3.9/bin:"* ]]; then
+  export PATH="/usr/local/opt/python@3.9/bin:$PATH"
+fi
+
 if ! [[  ":$PATH:" == *":/usr/local/opt/openjdk@11/bin:"* ]]; then
   export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 fi
@@ -137,6 +141,19 @@ az-token() {
   fi
 }
 
+term-commands() {
+  echo "control + A: move to the beginning of line"
+  echo "control + E: move to the end of line"
+  echo "option (alt) + F: move forward a word"
+  echo "option (alt) + B: move backward a word"
+  echo "control + U: cut the line before the cursor"
+  echo "control + K: cut line after the cursor"
+  echo "control + W: cut the word before the cursor"
+  echo "option (alt) + D: cut the word after the cursor"
+  echo "control + Y: paste from buffer"
+  echo "esc + T: transpose the two words before the cursor"
+}
+
 dc-recompile() {
   if [ -z "$1" ]; then
     echo "Please add the services you wish to recompile"
@@ -151,39 +168,3 @@ dc-recompile() {
   fi
 }
 
-
-k() {
-  kubectl config current-context
-}
-
-k-set() {
-  kubectl config use-context $1
-}
-
-k-get() {
-  kubectl get $1 -o wide
-}
-
-k-redeploy() {
-  kubectl patch deployment $1 -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"deploy-datetime\":\"`timestamp`\"}}}}}"
-}
-
-k-exec() {
-  echo "Finding \e[32m$1\e[39m pod..."
-  running_pods=$(kubectl get pods -l app=$1 --output=jsonpath={.items..metadata.name})
-  first_pod=$(echo $running_pods | cut -d' ' -f 1)
-  echo "Executing command...opening bash shell in pod \e[32m$first_pod \e[39m"
-  kubectl exec -it $first_pod bash
-}
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
-
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
-
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.bash
