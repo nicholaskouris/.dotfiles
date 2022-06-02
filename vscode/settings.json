@@ -8,11 +8,12 @@
         "immer"
     ],
     "cSpell.showStatus": false,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "trailing",
     "editor.renderControlCharacters": true,
     "editor.renderLineHighlight": "none",
     "editor.formatOnType": false,
     "editor.formatOnPaste": true,
+    "editor.guides.indentation": true,
     "editor.rulers": [
         120
     ],
@@ -59,7 +60,6 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
         "editor.detectIndentation": true,
-        "editor.renderIndentGuides": true
     },
     "search.exclude": {
         "**/node_modules": true,
