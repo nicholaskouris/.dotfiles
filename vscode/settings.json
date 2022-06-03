@@ -14,12 +14,12 @@
     "editor.formatOnType": false,
     "editor.formatOnPaste": true,
     "editor.guides.indentation": true,
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
     "editor.rulers": [
         120
     ],
     "window.autoDetectColorScheme": false,
-    "editor.minimap.enabled": false,
-    "editor.insertSpaces": true,
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
         "*.json": "jsonc"
@@ -34,7 +34,7 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.statusBar.enabled": false,
     "[javascript]": {
-        "editor.tabSize": 2,
+        "editor.tabSize": 4,
         "editor.insertSpaces": true
     },
     "javascript.suggest.autoImports": false,
@@ -82,5 +82,7 @@
     "workbench.editor.untitled.hint": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
     "window.zoomLevel": 1,
-    "search.searchOnType": false
+    "search.searchOnType": false,
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "error"
 }
