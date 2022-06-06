@@ -125,12 +125,11 @@ export NVM_DIR="$HOME/.nvm"
 
 setopt SHARE_HISTORY
 setopt INC_APPEND_HISTORY_TIME
-setopt HIST_FIND_NO_DUPS
 setopt HIST_REDUCE_BLANKS 
+setopt HIST_IGNORE_ALL_DUPS
 
 export HISTSIZE=100000
 export HISTFILESIZE=9999999
-
 
 alias gg='git log --oneline --graph --all --decorate'
 alias dc='docker-compose'
