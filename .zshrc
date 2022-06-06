@@ -123,12 +123,21 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY_TIME
+setopt HIST_FIND_NO_DUPS
+setopt HIST_REDUCE_BLANKS 
+
+export HISTSIZE=100000
+export HISTFILESIZE=9999999
+
+
 alias gg='git log --oneline --graph --all --decorate'
 alias dc='docker-compose'
 alias ip='curl ipinfo.io'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
+alias hh='history -i'
 alias path="echo $PATH | tr ':' '\n'"
-
 alias docker_restart='killall Docker && open /Applications/Docker.app'
 
 az-token() {
