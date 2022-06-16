@@ -178,6 +178,8 @@ term-shortcuts() {
   printf '\033[1;34m%s\033[0m\n' 'paste from buffer'
   printf '%-20s' 'esc + T'
   printf '\033[1;34m%s\033[0m\n' 'transpose the two words before the cursor'
+  printf '%-20s' 'control + R'
+  printf '\033[1;34m%s\033[0m\n' 'search history'
 }
 
 dc-recompile() {
