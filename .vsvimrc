@@ -1,0 +1,2 @@
+nmap <leader>w :set wrap!<CR>
+nmap <leader>n :set nu!<CR>

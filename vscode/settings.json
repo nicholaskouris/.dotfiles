@@ -2,10 +2,14 @@
 {
     "breadcrumbs.enabled": true,
     "cSpell.userWords": [
-        "complion",
-        "unfiled",
         "acro",
-        "immer"
+        "complion",
+        "dotfiles",
+        "immer",
+        "pylint",
+        "unfiled",
+        "vimrc",
+        "vsvimrc"
     ],
     "cSpell.showStatus": false,
     "editor.renderWhitespace": "trailing",
@@ -15,14 +19,16 @@
     "editor.formatOnPaste": true,
     "editor.guides.indentation": true,
     "editor.insertSpaces": true,
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.rulers": [
         120
     ],
-    "window.autoDetectColorScheme": false,
+    "editor.wordWrap": "off",
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
-        "*.json": "jsonc"
+        "*.json": "jsonc",
+        ".vsvimrc": "vimrc"
     },
     "files.exclude": {
         "**/.git": true,
@@ -33,23 +39,23 @@
     "gitlens.currentLine.enabled": true,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.statusBar.enabled": false,
+    "javascript.suggest.autoImports": false,
     "[javascript]": {
         "editor.tabSize": 4,
         "editor.insertSpaces": true
     },
-    "javascript.suggest.autoImports": false,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "python.formatting.provider": "black",
     "python.linting.enabled": false,
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
         "--disable=E1101"
     ],
-    "python.formatting.provider": "black",
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.tabSize": 2,
@@ -66,9 +72,14 @@
         "build/": true,
         "dist/": true
     },
+    "telemetry.telemetryLevel": "error",
     "terminal.explorerKind": "external",
     "terminal.external.osxExec": "Terminal.app",
     "vim.useSystemClipboard": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.dotfiles/.vsvimrc",
+    "window.autoDetectColorScheme": false,
+    "window.zoomLevel": 1,
     "workbench.settings.editor": "json",
     "workbench.settings.useSplitJSON": true,
     "workbench.activityBar.visible": false,
@@ -81,12 +92,10 @@
     "workbench.iconTheme": "vs-minimal",
     "workbench.editor.untitled.hint": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
-    "window.zoomLevel": 1,
     "search.searchOnType": false,
     "redhat.telemetry.enabled": false,
-    "telemetry.telemetryLevel": "error",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
-        "*": true,
+        "*": true
     }
 }
