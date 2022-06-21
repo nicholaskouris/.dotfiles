@@ -1,1 +1,1 @@
-source ${HOME}/.dotfiles/scripts/term-shortcuts
+source $HOME/.dotfiles/scripts/term-shortcuts

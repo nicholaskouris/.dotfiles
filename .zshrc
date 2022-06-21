@@ -118,35 +118,25 @@ if ! [[ ":$PATH:" == *":/usr/local/opt/openjdk@11/bin:"* ]]; then
   export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 fi
 
-export NVM_DIR="$HOME/.nvm"
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+if [ -s "$HOME/.nvm/nvm.sh" ]; then source "$HOME/.nvm/nvm.sh"; fi
+if [ -s "$HOME/.nvm/bash_completion" ]; then source "$HOME/.nvm/bash_completion"; fi
 
 setopt SHARE_HISTORY
 setopt INC_APPEND_HISTORY_TIME
-setopt HIST_REDUCE_BLANKS 
+setopt HIST_REDUCE_BLANKS
 setopt HIST_IGNORE_ALL_DUPS
 
 export HISTSIZE=100000
 export HISTFILESIZE=9999999
 
 alias gg='git log --oneline --graph --all --decorate'
+alias gs='git status --show-stash'
 alias dc='docker-compose'
 alias ip='curl ipinfo.io'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias hh='history -i'
 alias path="echo $PATH | tr ':' '\n'"
 alias docker_restart='killall Docker && open /Applications/Docker.app'
-
-az-token() {
-  if ! command -v jq &>/dev/null; then
-    echo "jq not installed"
-  else
-    az account get-access-token --resource-type oss-rdbms | jq -r '.accessToken' | pbcopy &&
-      echo "access token copied to clipboard"
-  fi
-}
 
 # Black        0;30     Dark Gray     1;30
 # Red          0;31     Light Red     1;31
@@ -156,6 +146,15 @@ az-token() {
 # Purple       0;35     Light Purple  1;35
 # Cyan         0;36     Light Cyan    1;36
 # Light Gray   0;37     White         1;37
+
+az-token() {
+  if ! command -v jq &>/dev/null; then
+    echo "jq not installed"
+  else
+    az account get-access-token --resource-type oss-rdbms | jq -r '.accessToken' | pbcopy &&
+      echo "access token copied to clipboard"
+  fi
+}
 
 dc-recompile() {
   if [ -z "$1" ]; then
