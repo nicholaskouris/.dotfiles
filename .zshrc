@@ -157,31 +157,6 @@ az-token() {
 # Cyan         0;36     Light Cyan    1;36
 # Light Gray   0;37     White         1;37
 
-term-shortcuts() {
-  printf '%-20s' 'control + A'
-  printf '\033[1;34m%s\033[0m\n' 'move to the beginning of line'
-  printf '%-20s' 'control + E'
-  printf '\033[1;34m%s\033[0m\n' 'move to the end of line'
-  printf '%-20s' 'option (alt) + F'
-  printf '\033[1;34m%s\033[0m\n' 'move forward a word'
-  printf '%-20s' 'option (alt) + B'
-  printf '\033[1;34m%s\033[0m\n' 'move backward a word'
-  printf '%-20s' 'control + U'
-  printf '\033[1;34m%s\033[0m\n' 'cut the line before the cursor'
-  printf '%-20s' 'control + K'
-  printf '\033[1;34m%s\033[0m\n' 'cut line after the cursor'
-  printf '%-20s' 'control + W'
-  printf '\033[1;34m%s\033[0m\n' 'cut the word before the cursor'
-  printf '%-20s' 'option (alt) + D'
-  printf '\033[1;34m%s\033[0m\n' 'cut the word after the cursor'
-  printf '%-20s' 'control + Y'
-  printf '\033[1;34m%s\033[0m\n' 'paste from buffer'
-  printf '%-20s' 'esc + T'
-  printf '\033[1;34m%s\033[0m\n' 'transpose the two words before the cursor'
-  printf '%-20s' 'control + R'
-  printf '\033[1;34m%s\033[0m\n' 'search history'
-}
-
 dc-recompile() {
   if [ -z "$1" ]; then
     echo "Please add the services you wish to recompile"
