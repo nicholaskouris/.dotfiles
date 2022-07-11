@@ -98,8 +98,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -f ~/.zprofile ]; then
-  source ~/.zprofile
+if [ -f $HOME/.zprofile ]; then
+  source $HOME/.zprofile
+fi
+
+if [ -f $HOME/.dotfiles/.zprofile ]; then
+  source $HOME/.dotfiles/.zprofile
 fi
 
 if ! [[ ":$PATH:" == *":/usr/local/opt/node@10/bin:"* ]]; then
