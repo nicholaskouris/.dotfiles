@@ -8,10 +8,14 @@
     "breadcrumbs.enabled": true,
     "cSpell.userWords": [
         "acro",
+        "chromedriver",
+        "clipboardy",
         "complion",
+        "datasource",
         "dotfiles",
         "highlightedyank",
         "immer",
+        "Mecha",
         "pylint",
         "rgba",
         "sibiraj",
@@ -75,6 +79,7 @@
         "editor.tabSize": 2,
         "editor.detectIndentation": true
     },
+    "yaml.maxItemsComputed": 10000,
     "[scss]": {
         "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
     },
