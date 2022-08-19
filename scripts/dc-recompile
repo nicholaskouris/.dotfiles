@@ -1,0 +1,12 @@
+,dc-recompile() {
+  if [ -z "$1" ]; then
+    echo "Please add the services you wish to recompile"
+  else
+    for service in "$@"; do
+      docker-compose stop "$service"
+    done
+    docker container prune -f
+    docker volume prune -f
+    dc up -d
+  fi
+}

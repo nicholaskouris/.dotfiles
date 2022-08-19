@@ -1,4 +1,4 @@
-term-shortcuts() {
+,term-shortcuts() {
     __ts 'control + A' 'move to the beginning of line'
     __ts 'control + E' 'move to the end of line'
     __ts 'option (alt) + F' 'move forward a word'

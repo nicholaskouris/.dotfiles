@@ -102,10 +102,6 @@ if [ -f $HOME/.zprofile ]; then
   source $HOME/.zprofile
 fi
 
-if [ -f $HOME/.dotfiles/.zprofile ]; then
-  source $HOME/.dotfiles/.zprofile
-fi
-
 if ! [[ ":$PATH:" == *":/usr/local/opt/node@10/bin:"* ]]; then
   export PATH="/usr/local/opt/node@10/bin:$PATH"
 fi
@@ -151,24 +147,6 @@ alias docker_restart='killall Docker && open /Applications/Docker.app'
 # Cyan         0;36     Light Cyan    1;36
 # Light Gray   0;37     White         1;37
 
-az-token() {
-  if ! command -v jq &>/dev/null; then
-    echo "jq not installed"
-  else
-    az account get-access-token --resource-type oss-rdbms | jq -r '.accessToken' | pbcopy &&
-      echo "access token copied to clipboard"
-  fi
-}
-
-dc-recompile() {
-  if [ -z "$1" ]; then
-    echo "Please add the services you wish to recompile"
-  else
-    for service in "$@"; do
-      docker-compose stop "$service"
-    done
-    docker container prune -f
-    docker volume prune -f
-    dc up -d
-  fi
-}
+source $HOME/.dotfiles/scripts/az-token
+source $HOME/.dotfiles/scripts/dc-recompile
+source $HOME/.dotfiles/scripts/term-shortcuts

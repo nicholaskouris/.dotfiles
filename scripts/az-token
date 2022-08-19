@@ -1,0 +1,8 @@
+,az-token() {
+  if ! command -v jq &>/dev/null; then
+    echo "jq not installed"
+  else
+    az account get-access-token --resource-type oss-rdbms | jq -r '.accessToken' | pbcopy &&
+      echo "access token copied to clipboard"
+  fi
+}
