@@ -2,6 +2,8 @@
 * $HOME/Library/Application\ Support/Code/User/settings.json
 *
 */
+
+
 {
     "breadcrumbs.enabled": true,
     "cSpell.userWords": [
