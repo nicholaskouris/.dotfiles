@@ -102,6 +102,10 @@ if [ -f $HOME/.zprofile ]; then
   source $HOME/.zprofile
 fi
 
+if ! [[ ":$PATH:" == *":/opt/homebrew/bin:"* ]]; then
+  export PATH="/opt/homebrew/bin:$PATH"
+fi
+
 if ! [[ ":$PATH:" == *":/usr/local/opt/node@10/bin:"* ]]; then
   export PATH="/usr/local/opt/node@10/bin:$PATH"
 fi
