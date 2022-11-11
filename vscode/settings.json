@@ -1,8 +1,6 @@
 /* 
 * $HOME/Library/Application\ Support/Code/User/settings.json
 *
-* shift + option + O      organize imports
-*
 */
 {
     "breadcrumbs.enabled": true,
@@ -31,6 +29,7 @@
     "editor.formatOnPaste": true,
     "editor.guides.indentation": true,
     "editor.insertSpaces": true,
+    "editor.inlineSuggest.enabled": true,
     "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.rulers": [
@@ -62,12 +61,20 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "python.formatting.provider": "black",
     "python.linting.enabled": false,
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
         "--disable=E1101"
     ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length=999"
+    ],
+    "[python]": {
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.wordBasedSuggestions": false
+    },
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
         "editor.tabSize": 2,
@@ -112,9 +119,5 @@
     "workbench.editor.untitled.hint": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
     "search.searchOnType": false,
-    "redhat.telemetry.enabled": false,
-    "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": {
-        "*": true
-    }
+    "redhat.telemetry.enabled": false
 }

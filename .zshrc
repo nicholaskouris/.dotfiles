@@ -130,11 +130,11 @@ export HISTSIZE=100000
 export HISTFILESIZE=9999999
 
 alias gg='git log --oneline --graph --all --decorate'
-alias gs='git status --show-stash'
+alias gs='git fetch && printf "\n" && git status --show-stash'
 alias dc='docker-compose'
 alias ip='curl ipinfo.io'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
-alias hh='history -i'
+alias hh='history -i' # to show ten lines: hh n=10
 alias path="echo $PATH | tr ':' '\n'"
 alias docker_restart='killall Docker && open /Applications/Docker.app'
 
