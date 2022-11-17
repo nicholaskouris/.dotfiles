@@ -1,0 +1,15 @@
+/**
+*  $HOME/Library/Application\ Support/azuredatastudio/User/settings.json
+*
+*/
+{
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.enablePreviewFeatures": true,
+    "workbench.colorTheme": "Solarized Light",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(238,232,213)",
+    "vim.highlightedyank.duration": 400,
+}

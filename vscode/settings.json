@@ -3,14 +3,15 @@
 *
 */
 
-
 {
     "breadcrumbs.enabled": true,
     "cSpell.userWords": [
         "acro",
+        "azuredatastudio",
         "chromedriver",
         "clipboardy",
         "complion",
+        "creds",
         "datasource",
         "dotfiles",
         "highlightedyank",

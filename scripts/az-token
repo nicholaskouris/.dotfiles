@@ -1,3 +1,4 @@
+#!/bin/bash
 ,az-token() {
   if ! command -v jq &>/dev/null; then
     echo "jq not installed"

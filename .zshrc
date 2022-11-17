@@ -151,6 +151,8 @@ alias docker_restart='killall Docker && open /Applications/Docker.app'
 # Cyan         0;36     Light Cyan    1;36
 # Light Gray   0;37     White         1;37
 
+# source scripts
 source $HOME/.dotfiles/scripts/az-token
 source $HOME/.dotfiles/scripts/dc-recompile
 source $HOME/.dotfiles/scripts/term-shortcuts
+source $HOME/.dotfiles/scripts/docker-usernames
