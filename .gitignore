@@ -1,8 +1,0 @@
-*.swp
-*.log
-.DS_Store
-.vim/bundle
-.netrwhist
-node_modules
-dist
-build
