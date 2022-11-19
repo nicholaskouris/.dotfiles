@@ -4,8 +4,6 @@
 
 [core]
     editor = vim
-    excludesfile = ~/.gitignore
-
 [diff]
     colorMoved = default
 
