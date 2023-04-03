@@ -68,6 +68,7 @@ DISABLE_LS_COLORS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# plugins=(zsh-vi-mode)
 plugins=()
 
 source $ZSH/oh-my-zsh.sh
@@ -101,6 +102,8 @@ source $ZSH/oh-my-zsh.sh
 if [ -f $HOME/.zprofile ]; then
   source $HOME/.zprofile
 fi
+
+bindkey -v
 
 if ! [[ ":$PATH:" == *":/opt/homebrew/bin:"* ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
@@ -155,4 +158,4 @@ alias docker_restart='killall Docker && open /Applications/Docker.app'
 source $HOME/.dotfiles/scripts/az-token
 source $HOME/.dotfiles/scripts/dc-recompile
 source $HOME/.dotfiles/scripts/term-shortcuts
-source $HOME/.dotfiles/scripts/docker-usernames
+source $HOME/.dotfiles/scripts/psql-shortcuts
