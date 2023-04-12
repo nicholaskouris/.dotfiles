@@ -14,5 +14,5 @@
 }
 
 __ts() {
-    printf '%-20s' $1; printf '\e[1;34m%s\e[0m\n' $2
+    printf '%-22s' $1; printf '\e[1;34m%s\e[0m\n' $2
 }

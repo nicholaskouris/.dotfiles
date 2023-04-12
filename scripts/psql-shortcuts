@@ -1,8 +1,12 @@
 #!/bin/bash
 ,psql-shortcuts() {
     __ps '\l, \l+' "'list' databases, + for more info"
+    __ps '\i <filename>' "'include' reads input from file"
+    __ps '\c <dbname>' "'connect' establishes a new connection to a PostgreSQL server"
+    __ps '\d, \d+ <dbname>' "'display' lists tables, views, and sequences, + for more info"
+    __ps '\d, \d+ <tablename>' "'display' lists table column names, + for more info"
 }
 
 __ps() {
-    printf '%-20s' $1; printf '\e[1;34m%s\e[0m\n' $2
+    printf '%-22s' $1; printf '\e[1;34m%s\e[0m\n' $2
 }
