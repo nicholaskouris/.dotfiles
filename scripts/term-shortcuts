@@ -1,5 +1,5 @@
 #!/bin/bash
-,term-shortcuts() {
+term-shortcuts() {
     __ts 'control + A' 'move to the beginning of line'
     __ts 'control + E' 'move to the end of line'
     __ts 'option (alt) + F' 'move forward a word'
@@ -10,7 +10,6 @@
     __ts 'option (alt) + D' 'cut the word after the cursor'
     __ts 'control + Y' 'paste from buffer'
     __ts 'esc + T' 'transpose the two words before the cursor'
-    __ts 'control + R' 'search history'
 }
 
 __ts() {

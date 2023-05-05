@@ -159,3 +159,6 @@ source $HOME/.dotfiles/scripts/az-token
 source $HOME/.dotfiles/scripts/dc-recompile
 source $HOME/.dotfiles/scripts/term-shortcuts
 source $HOME/.dotfiles/scripts/psql-shortcuts
+
+alias ,psql-shortcuts='psql-shortcuts | less'
+alias ,term-shortcuts='term-shortcuts | less'
