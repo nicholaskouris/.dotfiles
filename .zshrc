@@ -139,6 +139,7 @@ export HISTFILESIZE=9999999
 alias gg='git log --oneline --graph --all --decorate'
 alias gs='git fetch && printf "\n" && git status --show-stash'
 alias dc='docker-compose'
+alias kc='kubectl'
 alias ip='curl ipinfo.io'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias hh='history -i' # to show ten lines: hh n=10
@@ -159,6 +160,7 @@ source $HOME/.dotfiles/scripts/az-token
 source $HOME/.dotfiles/scripts/dc-recompile
 source $HOME/.dotfiles/scripts/term-shortcuts
 source $HOME/.dotfiles/scripts/psql-shortcuts
+source $HOME/.dotfiles/scripts/work-folder
 
 alias ,psql-shortcuts='psql-shortcuts | less'
 alias ,term-shortcuts='term-shortcuts | less'

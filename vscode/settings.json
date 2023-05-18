@@ -15,6 +15,7 @@
         "dotfiles",
         "highlightedyank",
         "immer",
+        "Keyspace",
         "Mecha",
         "pylint",
         "rgba",
@@ -123,5 +124,8 @@
     "workbench.editor.untitled.hint": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
     "search.searchOnType": false,
+    "sqltools.autoOpenSessionFiles": false,
+    "sqltools.showStatusbar": false,
+    "sqltools.highlightQuery": false,
     "redhat.telemetry.enabled": false
 }

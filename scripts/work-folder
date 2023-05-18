@@ -1,0 +1,13 @@
+#!/bin/bash
+,work-folder() {
+   if [ -d /$HOME/Desktop/$1 ]; then
+    echo "Folder already exists on Desktop.";
+    return 1;
+   fi
+
+   if (mkdir /$HOME/Documents/$1 2>/dev/null); then
+    ln -s /$HOME/Documents/$1 /$HOME/Desktop/$1;
+   else
+    echo "Could not create folder; may already exist in Documents.";
+   fi 
+}

@@ -6,6 +6,8 @@ psql-shortcuts() {
     _sh '\d, \d+ <dbname>' "'display' lists tables, views, and sequences, + for more info"
     _sh '\d, \d+ <tablename>' "'display' lists table column names, + for more info"
     _sh '\o <filename>' "'output' writes future query results to file; \o for stdout"
+    _sh '\e' "'editor' opens a text editor (default: vi)"
+    _sh '\timing' 'toggles timing of commands'
     printf '\n'
     _lng "\copy (<query>) TO '<path>' WITH DELIMITER ','" "'output' query results to csv"
     printf '\n'
