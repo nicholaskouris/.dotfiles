@@ -6,8 +6,12 @@
    fi
 
    if (mkdir /$HOME/Documents/$1 2>/dev/null); then
+    touch /$HOME/Documents/$1/$1;
     ln -s /$HOME/Documents/$1 /$HOME/Desktop/$1;
+
+    # open vscode (maybe make this optional?)
+    code /$HOME/Desktop/$1;
    else
-    echo "Could not create folder; may already exist in Documents.";
+    echo "Could not create folder in Documents.";
    fi 
 }

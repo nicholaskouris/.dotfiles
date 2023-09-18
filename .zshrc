@@ -141,6 +141,7 @@ alias gs='git fetch && printf "\n" && git status --show-stash'
 alias dc='docker-compose'
 alias kc='kubectl'
 alias ip='curl ipinfo.io'
+alias dd='open ~/Desktop'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias hh='history -i' # to show ten lines: hh n=10
 alias path="echo $PATH | tr ':' '\n'"

@@ -113,7 +113,6 @@
     "window.zoomLevel": 1,
     "workbench.settings.editor": "json",
     "workbench.settings.useSplitJSON": true,
-    "workbench.activityBar.visible": false,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 8,
     "workbench.panel.defaultLocation": "right",
@@ -127,5 +126,14 @@
     "sqltools.autoOpenSessionFiles": false,
     "sqltools.showStatusbar": false,
     "sqltools.highlightQuery": false,
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "workbench.activityBar.visible": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "tex": false
+    },
+    "git.openRepositoryInParentFolders": "never"
 }
