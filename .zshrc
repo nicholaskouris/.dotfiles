@@ -103,7 +103,7 @@ if [ -f $HOME/.zprofile ]; then
   source $HOME/.zprofile
 fi
 
-bindkey -v
+#bindkey -v
 
 if ! [[ ":$PATH:" == *":/opt/homebrew/bin:"* ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
