@@ -143,7 +143,7 @@ alias kc='kubectl'
 alias ip='curl ipinfo.io'
 alias dd='open ~/Desktop'
 alias timestamp='date -u +"%Y-%m-%dT%H:%M:%SZ"'
-alias hh='history -i' # to show ten lines: hh n=10
+alias hh='history -i | tail' # to show more than ten lines: 'hh -n 100'
 alias path="echo $PATH | tr ':' '\n'"
 alias docker_restart='killall Docker && open /Applications/Docker.app'
 

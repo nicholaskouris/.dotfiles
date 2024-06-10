@@ -20,6 +20,7 @@
         "pylint",
         "rgba",
         "sibiraj",
+        "sqltools",
         "unfiled",
         "vimrc",
         "vsvimrc"
@@ -113,7 +114,6 @@
     "window.autoDetectColorScheme": false,
     "window.zoomLevel": 1,
     "workbench.activityBar.location": "hidden",
-    "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Solarized Light",
     "workbench.settings.editor": "json",
     "workbench.editor.empty.hint": "hidden",
