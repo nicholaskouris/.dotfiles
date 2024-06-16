@@ -16,6 +16,7 @@
         "highlightedyank",
         "immer",
         "Keyspace",
+        "Kouris",
         "Mecha",
         "pylint",
         "rgba",
@@ -37,7 +38,7 @@
     "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.rulers": [
-        120
+        80
     ],
     "editor.wordWrap": "off",
     "explorer.confirmDragAndDrop": false,
@@ -79,7 +80,7 @@
         "gitlens.codeLens.symbolScopes": [
             "!Module"
         ],
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": "off"
     },
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features",
