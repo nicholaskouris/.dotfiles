@@ -4,6 +4,7 @@
 */
 {
     "breadcrumbs.enabled": true,
+    "chat.disableAIFeatures": true,
     "cSpell.userWords": [
         "acro",
         "azuredatastudio",
@@ -134,6 +135,9 @@
     "sqltools.highlightQuery": false,
     "redhat.telemetry.enabled": false,
     "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
